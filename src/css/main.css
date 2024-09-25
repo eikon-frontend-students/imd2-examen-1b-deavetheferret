@@ -75,7 +75,39 @@ video {
 
 /* 01. Sélecteurs CSS */
 
+h2,
+h3 {
+  font-family: "Playfair Display";
+}
+
+.section-sport h3 {
+  color: #c1121f;
+}
+
+.section-culture h3 {
+  color: #669bbc;
+}
+
+.section-regions .highlight {
+  font-weight: bold;
+}
+
+.section-regions .highlight.colored {
+  color: #fdf0d5;
+}
+
 /* 02. Centrer horizontalement */
+
+.link-container {
+  display: flex;
+  justify-content: center;
+}
+
+.calltoaction {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
 
 .link {
   margin-bottom: 15px;
@@ -103,6 +135,8 @@ video {
   padding: 20px;
   border-radius: 10px;
   background: #669bbc;
+  display: flex;
+  align-items: center;
 }
 
 .button {
@@ -110,7 +144,49 @@ video {
   margin-bottom: 20px;
   background: #780000;
   color: #fdf0d5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   text-align: center;
 }
 
 /* 04. Intégration */
+
+.exercise__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7fbfd;
+  height: 100%;
+}
+
+.card__container {
+  width: 50%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.169);
+}
+
+.card__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.card__content--pp {
+  width: 15%;
+}
+
+.card__content--title {
+  font-weight: 600;
+}
+
+.card__content--action {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
